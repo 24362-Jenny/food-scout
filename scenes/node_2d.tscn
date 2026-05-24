@@ -6,9 +6,13 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4vge2"]
 size = Vector2(128, 128)
 
-[node name="Node2D" type="Node2D" unique_id=313817924]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4dvvg"]
+size = Vector2(576, 16)
+
+[node name="level one" type="Node2D" unique_id=313817924]
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=1362996761]
+position = Vector2(584, 256)
 script = ExtResource("1_4dvvg")
 metadata/_edit_group_ = true
 
@@ -18,3 +22,16 @@ texture = ExtResource("2_rnjyy")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1970759441]
 shape = SubResource("RectangleShape2D_4vge2")
 metadata/_edit_group_ = true
+
+[node name="platform" type="StaticBody2D" parent="." unique_id=396830670]
+position = Vector2(512, 552)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="platform" unique_id=158854732]
+position = Vector2(88, 0)
+scale = Vector2(4.5, 0.12500001)
+texture = ExtResource("2_rnjyy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platform" unique_id=309486608]
+position = Vector2(88, 0)
+shape = SubResource("RectangleShape2D_4dvvg")
