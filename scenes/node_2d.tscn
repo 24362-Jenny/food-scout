@@ -25,6 +25,8 @@ texture = ExtResource("2_rnjyy")
 shape = SubResource("RectangleShape2D_4vge2")
 metadata/_edit_group_ = true
 
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=24445102]
+
 [node name="platform" type="StaticBody2D" parent="." unique_id=396830670]
 position = Vector2(512, 552)
 metadata/_edit_group_ = true
