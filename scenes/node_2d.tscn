@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://bjybruywl5s5d" path="res://scripts/player.gd" id="1_4dvvg"]
 [ext_resource type="Texture2D" uid="uid://cb1u3wvpoucrh" path="res://icon.svg" id="2_rnjyy"]
+[ext_resource type="PackedScene" uid="uid://c28bwg6btrogx" path="res://scenes/enemy_1.tscn" id="3_rnjyy"]
+[ext_resource type="PackedScene" uid="uid://cms7xous2dlur" path="res://scenes/bullet_1.tscn" id="4_4vge2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4vge2"]
 size = Vector2(48, 48)
@@ -12,7 +14,7 @@ size = Vector2(576, 16)
 [node name="level one" type="Node2D" unique_id=313817924]
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=1362996761]
-position = Vector2(592, 440)
+position = Vector2(1896, 600)
 script = ExtResource("1_4dvvg")
 metadata/_edit_group_ = true
 
@@ -41,7 +43,7 @@ position = Vector2(88, 0)
 shape = SubResource("RectangleShape2D_4dvvg")
 
 [node name="platform2" type="StaticBody2D" parent="." unique_id=69987413]
-position = Vector2(1200, 424)
+position = Vector2(1032, 504)
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="platform2" unique_id=778933740]
@@ -54,7 +56,7 @@ position = Vector2(88, 0)
 shape = SubResource("RectangleShape2D_4dvvg")
 
 [node name="platform3" type="StaticBody2D" parent="." unique_id=1448127487]
-position = Vector2(1864, 368)
+position = Vector2(1768, 632)
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="platform3" unique_id=714173011]
@@ -67,7 +69,7 @@ position = Vector2(88, 0)
 shape = SubResource("RectangleShape2D_4dvvg")
 
 [node name="platform4" type="StaticBody2D" parent="." unique_id=2095371965]
-position = Vector2(1616, 240)
+position = Vector2(1392, 448)
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="platform4" unique_id=1524171854]
@@ -78,3 +80,9 @@ texture = ExtResource("2_rnjyy")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platform4" unique_id=1983942932]
 position = Vector2(88, 0)
 shape = SubResource("RectangleShape2D_4dvvg")
+
+[node name="enemy1" parent="." unique_id=1825134664 instance=ExtResource("3_rnjyy")]
+position = Vector2(2032, 560)
+
+[node name="bullet1" parent="." unique_id=1766413708 instance=ExtResource("4_4vge2")]
+position = Vector2(2032, 480)
