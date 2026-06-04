@@ -23,3 +23,8 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+
+func _on_hitbox_area_entered(area: Area2D) -> void:
+	
+	get_tree().change_scene_to_file("res://scenes/death_scene.tscn")

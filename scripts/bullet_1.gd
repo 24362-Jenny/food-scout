@@ -1,4 +1,5 @@
 extends Area2D
+class_name Bullet
 
 var speed = 600
 var direction : Vector2 = Vector2.UP
