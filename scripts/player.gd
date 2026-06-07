@@ -3,6 +3,7 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
+var start_position = Vector2(584,400)
 
 
 func _physics_process(delta: float) -> void:
@@ -24,7 +25,15 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 
+	# handle respawn
+	if position.y > 1000: 
+		#respawn
+		position = start_position
+		
 
-func _on_hitbox_area_entered(area: Area2D) -> void:
+func _on_hitbox_area_entered(_area: Area2D) -> void:
 	
 	get_tree().change_scene_to_file("res://scenes/death_scene.tscn")
+	
+	
+	

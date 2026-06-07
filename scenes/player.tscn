@@ -23,6 +23,7 @@ shape = SubResource("RectangleShape2D_4vge2")
 metadata/_edit_group_ = true
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=221344865]
+position_smoothing_enabled = true
 
 [node name="hitbox" type="Area2D" parent="." unique_id=2074921393]
 
