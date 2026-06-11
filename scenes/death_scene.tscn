@@ -5,18 +5,11 @@
 [node name="death scene" type="Node2D" unique_id=98356800]
 script = ExtResource("1_3idvb")
 
-[node name="Controller" type="Control" parent="." unique_id=1163020380]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="restart" type="Button" parent="Controller" unique_id=1462545859]
-layout_mode = 0
+[node name="restart" type="Button" parent="." unique_id=1462545859]
 offset_left = 528.0
 offset_top = 304.0
 offset_right = 603.0
 offset_bottom = 335.0
 text = "RESTART"
 
-[connection signal="pressed" from="Controller/restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]

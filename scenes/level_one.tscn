@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bs1e4hl5cev6x" path="res://scenes/player.tscn" id="1_843q2"]
 [ext_resource type="Texture2D" uid="uid://cb1u3wvpoucrh" path="res://icon.svg" id="2_5rfim"]
 [ext_resource type="PackedScene" uid="uid://c28bwg6btrogx" path="res://scenes/enemy_1.tscn" id="3_r4wdr"]
+[ext_resource type="PackedScene" uid="uid://cr4j7t4042hdv" path="res://scenes/Portal.tscn" id="4_5rfim"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4dvvg"]
 size = Vector2(576, 16)
@@ -65,3 +66,6 @@ shape = SubResource("RectangleShape2D_4dvvg")
 
 [node name="enemy1" parent="platform4" unique_id=1825134664 instance=ExtResource("3_r4wdr")]
 position = Vector2(528, 112)
+
+[node name="Portal" parent="." unique_id=1430322806 instance=ExtResource("4_5rfim")]
+position = Vector2(1401, 185)
