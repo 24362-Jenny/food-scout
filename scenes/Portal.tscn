@@ -4,11 +4,12 @@
 [ext_resource type="Script" uid="uid://cjlpfrr4iaw0w" path="res://scripts/portal.gd" id="1_k0w37"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nhxoo"]
-radius = 144.0
-height = 288.0
+radius = 128.0
+height = 256.0
 
 [node name="Portal" type="Area2D" unique_id=1430322806]
 script = ExtResource("1_k0w37")
+metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=595307809]
 texture = ExtResource("1_fw72y")

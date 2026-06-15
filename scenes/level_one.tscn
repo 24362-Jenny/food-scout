@@ -64,8 +64,8 @@ texture = ExtResource("2_5rfim")
 position = Vector2(88, 0)
 shape = SubResource("RectangleShape2D_4dvvg")
 
-[node name="enemy1" parent="platform4" unique_id=1825134664 instance=ExtResource("3_r4wdr")]
-position = Vector2(528, 112)
-
 [node name="Portal" parent="." unique_id=1430322806 instance=ExtResource("4_5rfim")]
 position = Vector2(152, 432)
+
+[node name="enemy1" parent="." unique_id=1825134664 instance=ExtResource("3_r4wdr")]
+position = Vector2(1920, 560)
