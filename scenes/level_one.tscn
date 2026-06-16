@@ -64,6 +64,10 @@ texture = ExtResource("2_5rfim")
 position = Vector2(88, 0)
 shape = SubResource("RectangleShape2D_4dvvg")
 
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="platform4" unique_id=2142108529]
+position = Vector2(88, 0)
+shape = SubResource("RectangleShape2D_4dvvg")
+
 [node name="Portal" parent="." unique_id=1430322806 instance=ExtResource("4_5rfim")]
 position = Vector2(2344, 544)
 
