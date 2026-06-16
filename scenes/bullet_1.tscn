@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v6s6y"]
 size = Vector2(16, 16)
 
-[node name="bullet1" type="Area2D" unique_id=1766413708]
+[node name="bullet1" type="Area2D" unique_id=1766413708 groups=["bullet"]]
 script = ExtResource("1_v6s6y")
 metadata/_edit_group_ = true
 
