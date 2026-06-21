@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cnioylxovccv8"]
+
+[ext_resource type="Script" uid="uid://cseplydx4f8a4" path="res://scripts/shooter_2.gd" id="1_itbxp"]
+
+[node name="shooter2" type="Node2D" unique_id=1064488939]
+script = ExtResource("1_itbxp")
+
+[node name="Timer" type="Timer" parent="." unique_id=1520685154]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
