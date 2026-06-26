@@ -1,13 +1,8 @@
 extends CharacterBody2D
 
 
-<<<<<<< HEAD
 const SPEED = 300.0
 const JUMP_VELOCITY = -500.0
-=======
-const SPEED = 600.0
-const JUMP_VELOCITY = -450.0
->>>>>>> 3e8483cd914244454180496be5c2840c3e970cfa
 var start_position = Vector2(584,400)
 
 @export var MAX_JUMPS: int = 2

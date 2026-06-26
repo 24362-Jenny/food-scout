@@ -9,6 +9,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4dvvg"]
 size = Vector2(576, 16)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r4wdr"]
+size = Vector2(32, 96)
+
 [node name="level one" type="Node2D" unique_id=313817924]
 
 [node name="Player" parent="." unique_id=1531217639 instance=ExtResource("1_843q2")]
@@ -69,6 +72,18 @@ shape = SubResource("RectangleShape2D_4dvvg")
 position = Vector2(88, 0)
 shape = SubResource("RectangleShape2D_4dvvg")
 
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2050632230]
+position = Vector2(1152, 448)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=596028085]
+position = Vector2(0, -4.7683716e-07)
+scale = Vector2(0.24999999, 0.74999994)
+texture = ExtResource("2_5rfim")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1210766742]
+shape = SubResource("RectangleShape2D_r4wdr")
+
 [node name="Portal" parent="." unique_id=1430322806 instance=ExtResource("4_5rfim")]
 position = Vector2(2344, 544)
 
@@ -76,4 +91,4 @@ position = Vector2(2344, 544)
 position = Vector2(1920, 560)
 
 [node name="enemy2" parent="." unique_id=491178082 instance=ExtResource("5_r4wdr")]
-position = Vector2(1448, 408)
+position = Vector2(1328, 408)
