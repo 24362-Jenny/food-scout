@@ -173,7 +173,7 @@ texture = ExtResource("2_5rfim")
 shape = SubResource("RectangleShape2D_r4wdr")
 
 [node name="block2" type="StaticBody2D" parent="." unique_id=481425166]
-position = Vector2(168, 224)
+position = Vector2(160, 228)
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="block2" unique_id=1748665673]
@@ -198,6 +198,3 @@ position = Vector2(-136, 392)
 
 [node name="enemy2" parent="." unique_id=491178082 instance=ExtResource("5_r4wdr")]
 position = Vector2(1328, 408)
-
-[node name="enemy4" parent="." unique_id=743599621 instance=ExtResource("5_r4wdr")]
-position = Vector2(712, 64)
