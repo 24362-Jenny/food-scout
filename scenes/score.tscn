@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bwjjfhqb3m0e4"]
+
+[ext_resource type="Texture2D" uid="uid://wita8nxv2hwn" path="res://sun.png" id="1_8juob"]
+
+[node name="Score" type="Control" unique_id=845840468]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="." unique_id=247167547]
+layout_mode = 0
+offset_left = 24.0
+offset_top = -16.0
+offset_right = 64.0
+offset_bottom = 16.0
+theme_override_font_sizes/font_size = 22
+text = "0"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=731621935]
+position = Vector2(2.3841858e-07, 9.536743e-07)
+scale = Vector2(0.07804877, 0.07804878)
+texture = ExtResource("1_8juob")

@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://c28bwg6btrogx" path="res://scenes/enemy_1.tscn" id="3_r4wdr"]
 [ext_resource type="PackedScene" uid="uid://cr4j7t4042hdv" path="res://scenes/Portal.tscn" id="4_5rfim"]
 [ext_resource type="PackedScene" uid="uid://mortwkuxub2p" path="res://scenes/enemy2.tscn" id="5_r4wdr"]
+[ext_resource type="PackedScene" uid="uid://cbacd2xxsp84f" path="res://scenes/canvas_layer.tscn" id="6_bhu28"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4dvvg"]
 size = Vector2(576, 16)
@@ -198,3 +199,5 @@ position = Vector2(-136, 392)
 
 [node name="enemy2" parent="." unique_id=491178082 instance=ExtResource("5_r4wdr")]
 position = Vector2(1328, 408)
+
+[node name="CanvasLayer" parent="." unique_id=823440956 instance=ExtResource("6_bhu28")]

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://5lrqtepwd6ox"]
+
+[ext_resource type="Texture2D" uid="uid://c184nxu2dvr3d" path="res://Clock---rounded-hands-and-dots.png" id="1_hxfg6"]
+
+[node name="Time" type="Control" unique_id=504765211]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="." unique_id=735226931]
+layout_mode = 0
+offset_left = 32.0
+offset_top = -16.0
+offset_right = 72.0
+offset_bottom = 16.0
+theme_override_font_sizes/font_size = 22
+text = "0"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=415791052]
+position = Vector2(-3.8146973e-06, 0)
+scale = Vector2(0.080000006, 0.080000006)
+texture = ExtResource("1_hxfg6")
