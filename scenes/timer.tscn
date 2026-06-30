@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://y2xdbjvndfto"]
+
+[node name="Timer" type="Timer" unique_id=1338515137]
+wait_time = 30.0
+one_shot = true
+autostart = true

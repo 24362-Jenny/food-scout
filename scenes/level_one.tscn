@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://j7eot473nhc6"]
 
+[ext_resource type="PackedScene" uid="uid://d3x6tuk4ofkvp" path="res://scenes/hud_manager.tscn" id="1_4p75b"]
 [ext_resource type="PackedScene" uid="uid://bs1e4hl5cev6x" path="res://scenes/player.tscn" id="1_843q2"]
 [ext_resource type="Texture2D" uid="uid://cb1u3wvpoucrh" path="res://icon.svg" id="2_5rfim"]
 [ext_resource type="PackedScene" uid="uid://c28bwg6btrogx" path="res://scenes/enemy_1.tscn" id="3_r4wdr"]
 [ext_resource type="PackedScene" uid="uid://cr4j7t4042hdv" path="res://scenes/Portal.tscn" id="4_5rfim"]
 [ext_resource type="PackedScene" uid="uid://mortwkuxub2p" path="res://scenes/enemy2.tscn" id="5_r4wdr"]
 [ext_resource type="PackedScene" uid="uid://cbacd2xxsp84f" path="res://scenes/canvas_layer.tscn" id="6_bhu28"]
+[ext_resource type="PackedScene" uid="uid://y2xdbjvndfto" path="res://scenes/timer.tscn" id="8_y8ti4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4dvvg"]
 size = Vector2(576, 16)
@@ -14,6 +16,8 @@ size = Vector2(576, 16)
 size = Vector2(32, 96)
 
 [node name="level one" type="Node2D" unique_id=313817924]
+
+[node name="HUDManager" parent="." unique_id=1062153270 instance=ExtResource("1_4p75b")]
 
 [node name="Player" parent="." unique_id=1531217639 instance=ExtResource("1_843q2")]
 position = Vector2(584, 400)
@@ -201,3 +205,5 @@ position = Vector2(-136, 392)
 position = Vector2(1328, 408)
 
 [node name="CanvasLayer" parent="." unique_id=823440956 instance=ExtResource("6_bhu28")]
+
+[node name="Timer" parent="." unique_id=1338515137 instance=ExtResource("8_y8ti4")]

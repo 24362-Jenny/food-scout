@@ -2,11 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://bwjjfhqb3m0e4" path="res://scenes/score.tscn" id="1_ghj5q"]
 [ext_resource type="PackedScene" uid="uid://5lrqtepwd6ox" path="res://scenes/time.tscn" id="2_ek3oe"]
+[ext_resource type="PackedScene" uid="uid://tfgu41glc5yi" path="res://scenes/falls.tscn" id="3_ek3oe"]
 
 [node name="CanvasLayer" type="CanvasLayer" unique_id=823440956]
 
 [node name="Control" type="Control" parent="." unique_id=225488234]
 layout_mode = 3
+anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
@@ -22,4 +24,7 @@ theme_override_constants/separation = 50
 layout_mode = 2
 
 [node name="Time" parent="Control/VBoxContainer" unique_id=504765211 instance=ExtResource("2_ek3oe")]
+layout_mode = 2
+
+[node name="Falls" parent="Control/VBoxContainer" unique_id=1738901313 instance=ExtResource("3_ek3oe")]
 layout_mode = 2

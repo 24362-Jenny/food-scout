@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://tfgu41glc5yi"]
+
+[ext_resource type="Texture2D" uid="uid://swcxm8xts0jo" path="res://down_arrow.png" id="1_k1tvj"]
+
+[node name="Falls" type="Control" unique_id=1738901313]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="." unique_id=701867857]
+layout_mode = 0
+offset_left = 32.0
+offset_top = -16.0
+offset_right = 72.0
+offset_bottom = 15.0
+theme_override_font_sizes/font_size = 22
+text = "0"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1237435748]
+position = Vector2(3.8146973e-06, -3.8146973e-06)
+scale = Vector2(0.08000001, 0.080000006)
+texture = ExtResource("1_k1tvj")

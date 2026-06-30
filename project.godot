@@ -15,6 +15,10 @@ run/main_scene="uid://j7eot473nhc6"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+StateOfHud="*uid://n0lmqvx1ynxf"
+
 [global_group]
 
 bullet=""
