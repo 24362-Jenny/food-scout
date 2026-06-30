@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://d3x6tuk4ofkvp" path="res://scenes/hud_manager.tscn" id="1_4p75b"]
 [ext_resource type="PackedScene" uid="uid://bs1e4hl5cev6x" path="res://scenes/player.tscn" id="1_843q2"]
 [ext_resource type="Texture2D" uid="uid://cb1u3wvpoucrh" path="res://icon.svg" id="2_5rfim"]
+[ext_resource type="Script" uid="uid://c1gt68fpav26" path="res://scripts/platform.gd" id="3_astit"]
 [ext_resource type="PackedScene" uid="uid://c28bwg6btrogx" path="res://scenes/enemy_1.tscn" id="3_r4wdr"]
 [ext_resource type="PackedScene" uid="uid://cr4j7t4042hdv" path="res://scenes/Portal.tscn" id="4_5rfim"]
 [ext_resource type="PackedScene" uid="uid://mortwkuxub2p" path="res://scenes/enemy2.tscn" id="5_r4wdr"]
@@ -11,6 +12,9 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4dvvg"]
 size = Vector2(576, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o5wbv"]
+size = Vector2(4568, 0.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r4wdr"]
 size = Vector2(32, 96)
@@ -24,7 +28,7 @@ position = Vector2(584, 400)
 
 [node name="platform" type="StaticBody2D" parent="." unique_id=396830670]
 position = Vector2(512, 552)
-metadata/_edit_group_ = true
+script = ExtResource("3_astit")
 
 [node name="Sprite2D" type="Sprite2D" parent="platform" unique_id=158854732]
 position = Vector2(88, 0)
@@ -34,6 +38,12 @@ texture = ExtResource("2_5rfim")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platform" unique_id=309486608]
 position = Vector2(88, 0)
 shape = SubResource("RectangleShape2D_4dvvg")
+
+[node name="Area2D" type="Area2D" parent="platform" unique_id=1317430032]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platform/Area2D" unique_id=1544615356]
+position = Vector2(936, 464)
+shape = SubResource("RectangleShape2D_o5wbv")
 
 [node name="platform2" type="StaticBody2D" parent="." unique_id=69987413]
 position = Vector2(1032, 504)
@@ -207,3 +217,7 @@ position = Vector2(1328, 408)
 [node name="CanvasLayer" parent="." unique_id=823440956 instance=ExtResource("6_bhu28")]
 
 [node name="Timer" parent="." unique_id=1338515137 instance=ExtResource("8_y8ti4")]
+
+[connection signal="body_entered" from="platform/Area2D" to="platform" method="_on_area_2d_body_entered"]
+
+[editable path="CanvasLayer"]
