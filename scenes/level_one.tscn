@@ -207,4 +207,10 @@ position = Vector2(1328, 408)
 
 [node name="Timer" parent="." unique_id=1338515137 instance=ExtResource("8_y8ti4")]
 
+[node name="CountdownTimer" type="Timer" parent="." unique_id=1214213822]
+wait_time = 30.0
+one_shot = true
+
+[connection signal="timeout" from="CountdownTimer" to="HUDManager" method="_on_countdown_timer_timeout"]
+
 [editable path="CanvasLayer"]

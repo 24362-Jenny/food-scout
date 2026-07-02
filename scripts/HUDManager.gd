@@ -16,6 +16,17 @@ func _ready() -> void:
 	time.text = str(int(timer.time_left))
 	# Start the countdown when the level begins
 	countdown_timer.start()
+	
+	countdown_timer.start()
+	if not level_active:
+		return
+	
+	level_active = false
+	countdown_timer.stop() #freeze the clock
+	
+	# Calculating score based on the remaining time
+	var time_left = countdown_timer.time_left
+	final_score = int(time_left * score_multiplier)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -26,25 +37,10 @@ func _process(_delta: float) -> void:
 	if not level_active and not countdown_timer.is_stopped():
 		#update the UI text to show whole seconds left
 		timer_label.text = "Time Left: " + str(ceil(countdown_timer.time_left))
-
-func _on_level_completed() -> void: 
-	if not level_active:
-		return
 	
-	level_active = false
-	countdown_timer.stop() #freeze the clock
-	
-	# Calculating score based on the remaining time
-	var time_left = countdown_timer.time_left
-	final_score = int(time_left * score_multiplier)
-	
-	get_tree().change_scene_to_file("res://scenes/ending_scene_level.tscn")
-
-
-
-
-
-
 
 func _on_countdown_timer_timeout() -> void:
-	pass # Replace with function body.
+	if level_active: 
+		level_active = false
+		final_score = 0
+		
