@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://cbacd2xxsp84f"]
 
-[ext_resource type="PackedScene" uid="uid://bwjjfhqb3m0e4" path="res://scenes/score.tscn" id="1_ghj5q"]
 [ext_resource type="PackedScene" uid="uid://5lrqtepwd6ox" path="res://scenes/time.tscn" id="2_ek3oe"]
 
 [node name="CanvasLayer" type="CanvasLayer" unique_id=823440956]
@@ -18,9 +17,6 @@ offset_top = 32.0
 offset_right = 80.0
 offset_bottom = 82.0
 theme_override_constants/separation = 50
-
-[node name="Score" parent="Control/VBoxContainer" unique_id=845840468 instance=ExtResource("1_ghj5q")]
-layout_mode = 2
 
 [node name="Time" parent="Control/VBoxContainer" unique_id=504765211 instance=ExtResource("2_ek3oe")]
 layout_mode = 2
