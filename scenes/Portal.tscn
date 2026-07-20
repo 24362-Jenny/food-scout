@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cr4j7t4042hdv"]
 
-[ext_resource type="Texture2D" uid="uid://bwtxjyqkmunfv" path="res://14.png" id="1_fw72y"]
 [ext_resource type="Script" uid="uid://cjlpfrr4iaw0w" path="res://scripts/portal.gd" id="1_k0w37"]
+[ext_resource type="Texture2D" uid="uid://bvfk1iktdgf0d" path="res://Portal.png" id="2_k0w37"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nhxoo"]
 radius = 128.0
@@ -12,7 +12,9 @@ script = ExtResource("1_k0w37")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=595307809]
-texture = ExtResource("1_fw72y")
+position = Vector2(-3.8146973e-06, -3.8146973e-06)
+scale = Vector2(2, 2)
+texture = ExtResource("2_k0w37")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=367924266]
 shape = SubResource("CapsuleShape2D_nhxoo")
