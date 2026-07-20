@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c28bwg6btrogx"]
 
 [ext_resource type="Script" uid="uid://ccjx81jnibab4" path="res://scripts/enemy_1.gd" id="1_a1412"]
-[ext_resource type="Texture2D" uid="uid://cb1u3wvpoucrh" path="res://icon.svg" id="1_tcmaw"]
+[ext_resource type="Texture2D" uid="uid://bdliif8w1eyxj" path="res://enemy1().png" id="2_ejytf"]
 [ext_resource type="PackedScene" uid="uid://c6mbeujp5npkx" path="res://scenes/shooter1.tscn" id="3_ejytf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a1412"]
@@ -12,9 +12,9 @@ script = ExtResource("1_a1412")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1685510494]
-position = Vector2(-1.9073486e-06, 1.9073486e-06)
-scale = Vector2(0.99999994, 1)
-texture = ExtResource("1_tcmaw")
+position = Vector2(-3.9999938, 76.00001)
+scale = Vector2(4.75, 4.375)
+texture = ExtResource("2_ejytf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=362028684]
 shape = SubResource("RectangleShape2D_a1412")
