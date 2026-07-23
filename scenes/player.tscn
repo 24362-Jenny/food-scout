@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bs1e4hl5cev6x"]
 
 [ext_resource type="Script" uid="uid://bjybruywl5s5d" path="res://scripts/player.gd" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://cb1u3wvpoucrh" path="res://icon.svg" id="2_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://00qrcu30c86o" path="res://Player (candy).png" id="2_g2els"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4vge2"]
 size = Vector2(64, 64)
@@ -14,9 +14,9 @@ script = ExtResource("1_g2els")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1616751756]
-position = Vector2(9.536743e-07, 4.2915344e-06)
-scale = Vector2(0.50000006, 0.50000006)
-texture = ExtResource("2_qhqgy")
+position = Vector2(9.536743e-07, 0)
+scale = Vector2(3.7647061, 3.764706)
+texture = ExtResource("2_g2els")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=113332121]
 shape = SubResource("RectangleShape2D_4vge2")
