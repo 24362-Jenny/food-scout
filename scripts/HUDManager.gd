@@ -3,8 +3,7 @@ extends Node
 @onready var time: Label = $"../CanvasLayer/Control/VBoxContainer/Time/Label"
 @onready var timer: Timer = $"../Timer"
 @onready var countdown_timer : Timer = $"../CountdownTimer"
-@onready var timer_label: Label = $"TimerLabel"
-
+@onready var timer_label: Label = $"TimerLable"
 
 var level_active: bool = true
 
