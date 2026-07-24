@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://5lrqtepwd6ox"]
 
-[ext_resource type="Texture2D" uid="uid://c184nxu2dvr3d" path="res://Clock---rounded-hands-and-dots.png" id="1_hxfg6"]
+[ext_resource type="Texture2D" uid="uid://b104v4qdbv23n" path="res://timer.png" id="1_hxfg6"]
 
 [node name="Time" type="Control" unique_id=504765211]
 layout_mode = 3
@@ -18,6 +18,6 @@ theme_override_font_sizes/font_size = 22
 text = "0"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=415791052]
-position = Vector2(-3.8146973e-06, 0)
-scale = Vector2(0.080000006, 0.080000006)
+position = Vector2(1.4305115e-06, -1.9073486e-06)
+scale = Vector2(1.25, 1.25)
 texture = ExtResource("1_hxfg6")

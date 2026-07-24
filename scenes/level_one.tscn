@@ -205,6 +205,9 @@ position = Vector2(1328, 408)
 
 [node name="CanvasLayer" parent="." unique_id=823440956 instance=ExtResource("6_bhu28")]
 
+[node name="Control" parent="CanvasLayer" index="0" unique_id=225488234]
+offset_top = 8.0
+
 [node name="Timer" parent="." unique_id=1338515137 instance=ExtResource("8_y8ti4")]
 
 [node name="CountdownTimer" type="Timer" parent="." unique_id=1214213822]
