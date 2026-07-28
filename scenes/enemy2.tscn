@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://mortwkuxub2p"]
 
 [ext_resource type="Script" uid="uid://blgvu1elwbl2k" path="res://scripts/enemy_2.gd" id="1_3neu4"]
-[ext_resource type="Texture2D" uid="uid://cqy47cgu4b061" path="res://Enemy2.png" id="2_mhmjl"]
+[ext_resource type="Texture2D" uid="uid://cqy47cgu4b061" path="res://piskel art/Enemy2.png" id="2_mhmjl"]
 [ext_resource type="PackedScene" uid="uid://cnioylxovccv8" path="res://scenes/shooter_2.tscn" id="3_mhmjl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mhmjl"]

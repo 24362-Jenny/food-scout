@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cr4j7t4042hdv"]
 
 [ext_resource type="Script" uid="uid://cjlpfrr4iaw0w" path="res://scripts/portal.gd" id="1_k0w37"]
-[ext_resource type="Texture2D" uid="uid://bvfk1iktdgf0d" path="res://Portal.png" id="2_k0w37"]
+[ext_resource type="Texture2D" uid="uid://bvfk1iktdgf0d" path="res://piskel art/Portal.png" id="2_k0w37"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nhxoo"]
 radius = 128.0

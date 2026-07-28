@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqy47cgu4b061"
-path="res://.godot/imported/Enemy2.png-a19dcc6ec3f1de241921de9eae788521.ctex"
+uid="uid://00qrcu30c86o"
+path="res://.godot/imported/Player (candy).png-d40544bbcdcc86c833c57ac89a3fa044.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enemy2.png"
-dest_files=["res://.godot/imported/Enemy2.png-a19dcc6ec3f1de241921de9eae788521.ctex"]
+source_file="res://piskel art/Player (candy).png"
+dest_files=["res://.godot/imported/Player (candy).png-d40544bbcdcc86c833c57ac89a3fa044.ctex"]
 
 [params]
 

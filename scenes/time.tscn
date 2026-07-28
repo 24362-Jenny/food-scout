@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://5lrqtepwd6ox"]
 
-[ext_resource type="Texture2D" uid="uid://b104v4qdbv23n" path="res://timer.png" id="1_hxfg6"]
+[ext_resource type="Texture2D" uid="uid://b104v4qdbv23n" path="res://piskel art/timer.png" id="1_hxfg6"]
 
 [node name="Time" type="Control" unique_id=504765211]
 layout_mode = 3
