@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://d3x6tuk4ofkvp" path="res://scenes/hud_manager.tscn" id="1_4p75b"]
 [ext_resource type="PackedScene" uid="uid://bs1e4hl5cev6x" path="res://scenes/player.tscn" id="1_843q2"]
-[ext_resource type="Texture2D" uid="uid://cvthk35kjoa4h" path="res://piskel art/background(real).png" id="1_astit"]
+[ext_resource type="Texture2D" uid="uid://jhqu05s438rv" path="res://piskel art/BG.png" id="1_astit"]
 [ext_resource type="Texture2D" uid="uid://cb1u3wvpoucrh" path="res://icon.svg" id="2_5rfim"]
 [ext_resource type="PackedScene" uid="uid://c28bwg6btrogx" path="res://scenes/enemy_1.tscn" id="3_r4wdr"]
 [ext_resource type="PackedScene" uid="uid://cr4j7t4042hdv" path="res://scenes/Portal.tscn" id="4_5rfim"]
@@ -19,11 +19,12 @@ size = Vector2(32, 96)
 [node name="level one" type="Node2D" unique_id=313817924]
 
 [node name="background" type="Parallax2D" parent="." unique_id=1592770565]
-repeat_size = Vector2(1152, 0)
+repeat_size = Vector2(2000, 0)
+repeat_times = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="background" unique_id=824400780]
-position = Vector2(8, -79.99999)
-scale = Vector2(3.6, 3.7)
+position = Vector2(264, -976)
+scale = Vector2(3.5428572, 3.302857)
 texture = ExtResource("1_astit")
 centered = false
 
