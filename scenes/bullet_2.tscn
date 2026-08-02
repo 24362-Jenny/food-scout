@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://vsgnfa6ye4aa"]
 
 [ext_resource type="Script" uid="uid://ce3yi23l6fq17" path="res://scripts/bullet_2.gd" id="1_xm0l7"]
-[ext_resource type="Texture2D" uid="uid://cb1u3wvpoucrh" path="res://icon.svg" id="2_v4deb"]
+[ext_resource type="Texture2D" uid="uid://b42jux1eo6a1e" path="res://piskel art/bullet2.png" id="2_xm0l7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ig2hj"]
 size = Vector2(16, 16)
@@ -10,8 +10,9 @@ size = Vector2(16, 16)
 script = ExtResource("1_xm0l7")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=668502120]
-scale = Vector2(0.12499999, 0.12499999)
-texture = ExtResource("2_v4deb")
+position = Vector2(-7.1525574e-07, -7.1525574e-07)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_xm0l7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=91538575]
 shape = SubResource("RectangleShape2D_ig2hj")
