@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://c6mbeujp5npkx" path="res://scenes/shooter1.tscn" id="3_ejytf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a1412"]
-size = Vector2(128, 128)
+size = Vector2(128, 112)
 
 [node name="enemy1" type="CharacterBody2D" unique_id=1825134664]
 script = ExtResource("1_a1412")
@@ -17,6 +17,7 @@ scale = Vector2(4.75, 4.375)
 texture = ExtResource("2_ejytf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=362028684]
+position = Vector2(0, 8)
 shape = SubResource("RectangleShape2D_a1412")
 
 [node name="shooter" parent="." unique_id=359581557 instance=ExtResource("3_ejytf")]
