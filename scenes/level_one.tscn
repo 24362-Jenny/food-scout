@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://n7wr4y7hroth" path="res://tilemap/simple tilemap but bigger.png" id="10_o5wbv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r4wdr"]
-size = Vector2(32, 100)
+size = Vector2(32, 118)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s6ikc"]
 texture = ExtResource("10_o5wbv")
@@ -49,12 +49,12 @@ position = Vector2(1152, 456)
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="block" unique_id=596028085]
-position = Vector2(6.651878e-05, -4.0000052)
-scale = Vector2(2.0000024, 3.25)
+position = Vector2(6.651878e-05, -12.000011)
+scale = Vector2(2.0000024, 3.7500005)
 texture = ExtResource("4_s6ikc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="block" unique_id=1210766742]
-position = Vector2(0, -4)
+position = Vector2(0, -13)
 shape = SubResource("RectangleShape2D_r4wdr")
 
 [node name="block2" type="StaticBody2D" parent="." unique_id=481425166]
