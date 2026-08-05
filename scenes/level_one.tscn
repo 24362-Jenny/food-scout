@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://n7wr4y7hroth" path="res://tilemap/simple tilemap but bigger.png" id="10_o5wbv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r4wdr"]
-size = Vector2(32, 118)
+size = Vector2(32, 109)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s6ikc"]
 texture = ExtResource("10_o5wbv")
@@ -67,7 +67,7 @@ scale = Vector2(2.0000002, 3.25)
 texture = ExtResource("4_s6ikc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="block2" unique_id=38299929]
-position = Vector2(0, -2)
+position = Vector2(0, -6.5)
 shape = SubResource("RectangleShape2D_r4wdr")
 
 [node name="Portal" parent="." unique_id=1430322806 instance=ExtResource("4_5rfim")]
