@@ -8,6 +8,7 @@
 size = Vector2(128, 112)
 
 [node name="enemy1" type="CharacterBody2D" unique_id=1825134664]
+texture_filter = 1
 script = ExtResource("1_a1412")
 metadata/_edit_group_ = true
 

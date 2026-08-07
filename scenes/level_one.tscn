@@ -42,6 +42,7 @@ centered = false
 [node name="HUDManager" parent="." unique_id=1062153270 instance=ExtResource("1_4p75b")]
 
 [node name="Player" parent="." unique_id=1531217639 instance=ExtResource("1_843q2")]
+texture_filter = 1
 position = Vector2(584, 400)
 
 [node name="block" type="StaticBody2D" parent="." unique_id=2050632230]
