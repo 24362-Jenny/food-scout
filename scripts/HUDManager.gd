@@ -3,8 +3,6 @@ extends Node
 @onready var time: Label = $"../CanvasLayer/Control/VBoxContainer/Time/Label"
 @onready var timer: Timer = $"../Timer"
 @onready var countdown_timer : Timer = $"../CountdownTimer"
-@onready var timer_label: Label = $"TimerLabel"
-
 
 var level_active: bool = true
 
@@ -21,10 +19,7 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	time.text = str(int(timer.time_left))
 	
-	if not level_active and not countdown_timer.is_stopped():
-		#update the UI text to show whole seconds left
-		timer_label.text = "Time Left: " + str(ceil(countdown_timer.time_left))
-	
+
 
 func _on_countdown_timer_timeout() -> void:
 	if level_active: 
