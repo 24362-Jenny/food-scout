@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+@onready var HUD_manager: Node = $"../HUDManager"
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -500.0
@@ -53,3 +54,9 @@ func _on_hitbox_area_entered(_area: Area2D) -> void:
 	print(_area.get_groups())
 	if _area.is_in_group("bullet"):
 		get_tree().change_scene_to_file("res://scenes/death_scene.tscn")
+
+func _ready() -> void:
+	HUD_manager.level_time_expired.connect(die)
+
+func die() -> void:
+	get_tree().change_scene_to_file("res://scenes/death_scene.tscn")

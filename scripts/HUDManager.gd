@@ -1,5 +1,7 @@
 extends Node
 
+signal level_time_expired
+
 @onready var time: Label = $"../CanvasLayer/Control/VBoxContainer/Time/Label"
 @onready var timer: Timer = $"../Timer"
 @onready var countdown_timer : Timer = $"../CountdownTimer"
