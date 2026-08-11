@@ -21,10 +21,9 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	time.text = str(int(timer.time_left))
 	# emit the signal when the time runs out
-	level_time_expired.emit()
 
 
 func _on_countdown_timer_timeout() -> void:
 	if level_active: 
 		level_active = false
-		
+		level_time_expired.emit() # fires ONLY ONCE when the timer reaches zero
