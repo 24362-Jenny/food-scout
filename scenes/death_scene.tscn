@@ -8,8 +8,8 @@ script = ExtResource("1_3idvb")
 [node name="restart" type="Button" parent="." unique_id=1462545859]
 offset_left = 528.0
 offset_top = 304.0
-offset_right = 603.0
-offset_bottom = 335.0
+offset_right = 816.0
+offset_bottom = 472.0
 text = "RESTART"
 
 [connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]
