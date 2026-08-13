@@ -6,24 +6,24 @@
 script = ExtResource("1_u6pym")
 
 [node name="play again" type="Button" parent="." unique_id=1816982112]
-offset_left = 512.0
-offset_top = 440.0
-offset_right = 704.0
-offset_bottom = 527.0
+offset_left = 56.0
+offset_top = 392.0
+offset_right = 248.0
+offset_bottom = 479.0
 text = "PLAY AGAIN"
 
 [node name="exit" type="Button" parent="." unique_id=2042964027]
-offset_left = 512.0
-offset_top = 280.0
-offset_right = 696.0
-offset_bottom = 384.0
+offset_left = 56.0
+offset_top = 216.0
+offset_right = 240.0
+offset_bottom = 320.0
 text = "EXIT GAME"
 
 [node name="home" type="Button" parent="." unique_id=504871076]
-offset_left = 520.0
-offset_top = 128.0
-offset_right = 696.0
-offset_bottom = 231.0
+offset_left = 56.0
+offset_top = 40.0
+offset_right = 232.0
+offset_bottom = 143.0
 text = "HOME"
 
 [connection signal="pressed" from="play again" to="." method="_on_play_again_pressed"]
