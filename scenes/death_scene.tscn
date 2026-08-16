@@ -1,15 +1,25 @@
 [gd_scene format=3 uid="uid://dpdw3bw1crp28"]
 
 [ext_resource type="Script" uid="uid://bxnx63jgm07kx" path="res://scripts/death_scene.gd" id="1_3idvb"]
+[ext_resource type="Texture2D" uid="uid://x3rtrrve1s5w" path="res://piskel art/death scene first try.png" id="2_o2qfb"]
 
 [node name="death scene" type="Node2D" unique_id=98356800]
 script = ExtResource("1_3idvb")
 
+[node name="death scene background" type="Parallax2D" parent="." unique_id=1919653081]
+
+[node name="Sprite2D" type="Sprite2D" parent="death scene background" unique_id=131445628]
+texture_filter = 1
+position = Vector2(580, 641.5)
+scale = Vector2(1.9861112, 1.9646153)
+texture = ExtResource("2_o2qfb")
+
 [node name="restart" type="Button" parent="." unique_id=1462545859]
-offset_left = 64.0
-offset_top = 64.0
-offset_right = 352.0
-offset_bottom = 232.0
+offset_left = 88.0
+offset_top = 344.0
+offset_right = 376.0
+offset_bottom = 512.0
+theme_override_font_sizes/font_size = 40
 text = "RESTART"
 
 [connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]
