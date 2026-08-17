@@ -1,27 +1,25 @@
 [gd_scene format=3 uid="uid://dpdw3bw1crp28"]
 
-[ext_resource type="Script" uid="uid://bxnx63jgm07kx" path="res://scripts/death_scene.gd" id="1_3idvb"]
-[ext_resource type="Texture2D" uid="uid://x3rtrrve1s5w" path="res://piskel art/death scene first try.png" id="2_o2qfb"]
-[ext_resource type="FontFile" uid="uid://c54as1c2c4lyl" path="res://sounds&fonts/Quicksand-Regular.ttf" id="3_vcjmr"]
+[ext_resource type="Script" uid="uid://b05s8216v8kwg" path="res://scripts/ending_scene_level.gd" id="1_3idvb"]
 
-[node name="death scene" type="Node2D" unique_id=98356800]
+[node name="Ending scene_level" type="Node2D" unique_id=482045948]
 script = ExtResource("1_3idvb")
 
-[node name="death scene background" type="Parallax2D" parent="." unique_id=1919653081]
+[node name="play again" type="Button" parent="." unique_id=1816982112]
+offset_left = 128.0
+offset_top = 224.0
+offset_right = 512.0
+offset_bottom = 416.0
+theme_override_font_sizes/font_size = 30
+text = "PLAY AGAIN"
 
-[node name="Sprite2D" type="Sprite2D" parent="death scene background" unique_id=131445628]
-texture_filter = 1
-position = Vector2(580, 641.5)
-scale = Vector2(1.9861112, 1.9646153)
-texture = ExtResource("2_o2qfb")
+[node name="exit" type="Button" parent="." unique_id=2042964027]
+offset_left = 640.0
+offset_top = 224.0
+offset_right = 1024.0
+offset_bottom = 416.0
+theme_override_font_sizes/font_size = 30
+text = "EXIT GAME"
 
-[node name="restart" type="Button" parent="." unique_id=1462545859]
-offset_left = 88.0
-offset_top = 344.0
-offset_right = 376.0
-offset_bottom = 512.0
-theme_override_fonts/font = ExtResource("3_vcjmr")
-theme_override_font_sizes/font_size = 50
-text = "RESTART"
-
-[connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="play again" to="." method="_on_play_again_pressed"]
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
