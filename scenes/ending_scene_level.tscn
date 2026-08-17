@@ -1,46 +1,23 @@
 [gd_scene format=3 uid="uid://bkgkxl6eystox"]
 
 [ext_resource type="Script" uid="uid://b05s8216v8kwg" path="res://scripts/ending_scene_level.gd" id="1_u6pym"]
-[ext_resource type="FontFile" uid="uid://c54as1c2c4lyl" path="res://sounds&fonts/Quicksand-Regular.ttf" id="2_5co4f"]
 
 [node name="Ending scene_level" type="Node2D" unique_id=482045948]
 script = ExtResource("1_u6pym")
 
 [node name="play again" type="Button" parent="." unique_id=1816982112]
-<<<<<<< HEAD
 offset_left = 128.0
 offset_top = 224.0
 offset_right = 512.0
 offset_bottom = 416.0
-=======
-offset_left = 56.0
-offset_top = 392.0
-offset_right = 248.0
-offset_bottom = 479.0
-theme_override_fonts/font = ExtResource("2_5co4f")
-<<<<<<< Updated upstream
-=======
->>>>>>> bd7cd4ead8cf7e60e6e38db4af22ea34c8caf70f
->>>>>>> Stashed changes
 theme_override_font_sizes/font_size = 30
 text = "PLAY AGAIN"
 
 [node name="exit" type="Button" parent="." unique_id=2042964027]
-<<<<<<< HEAD
 offset_left = 640.0
 offset_top = 224.0
 offset_right = 1024.0
 offset_bottom = 416.0
-=======
-offset_left = 56.0
-offset_top = 216.0
-offset_right = 240.0
-offset_bottom = 320.0
-theme_override_fonts/font = ExtResource("2_5co4f")
-<<<<<<< Updated upstream
-=======
->>>>>>> bd7cd4ead8cf7e60e6e38db4af22ea34c8caf70f
->>>>>>> Stashed changes
 theme_override_font_sizes/font_size = 30
 text = "EXIT GAME"
 
