@@ -11,6 +11,7 @@ size = Vector2(64, 64)
 
 [node name="Player" type="CharacterBody2D" unique_id=1531217639]
 script = ExtResource("1_g2els")
+MAX_JUMPS = null
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1616751756]

@@ -40,8 +40,13 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-
+	
 	move_and_slide()
+	
+	if velocity == Vector2.ZERO:
+		anim_player.play("idle")
+	else:
+		anim_player.play("RESET")
 
 	# handle respawn
 	if position.y > 1000: 
