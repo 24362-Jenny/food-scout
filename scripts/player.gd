@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
-@onready var HUD_manager: Node = $"../HUDManager"
+@export var HUD_manager: Node 
+@onready var anim_player: AnimationPlayer = $AnimationPlayer
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -500.0
@@ -44,7 +45,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 	if velocity == Vector2.ZERO:
-		anim_player.play("idle")
+		$AnimationPlayer.play("idle")
 	else:
 		anim_player.play("RESET")
 
