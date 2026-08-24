@@ -3,6 +3,11 @@ extends CharacterBody2D
 @export var HUD_manager: Node 
 @onready var anim_player: AnimationPlayer = $AnimationPlayer
 
+
+@onready var camera: Camera2D = $Camera2D
+@export var jump_velocity: float = -400.0
+
+
 const SPEED = 300.0
 const JUMP_VELOCITY = -500.0
 var start_position = Vector2(584,400)
@@ -24,6 +29,9 @@ func _physics_process(delta: float) -> void:
 		if is_on_floor() or jump_count < MAX_JUMPS:
 			velocity.y = JUMP_VELOCITY
 			jump_count += 1
+			# Trigger the screen shake on jump
+			if camera:
+				camera.apply_shake(15.0)
 
 
 	# Add the gravity.
@@ -41,6 +49,14 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+	
+	# Handle Jump
+	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+		velocity.y = jump_velocity
+		
+		# Trigger the screen shake
+		if camera:
+			camera.apply_shake(15.0) # Pass custom intensity if desired
 	
 	move_and_slide()
 	

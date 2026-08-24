@@ -60,9 +60,6 @@ texture = ExtResource("2_g2els")
 shape = SubResource("RectangleShape2D_4vge2")
 metadata/_edit_group_ = true
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=221344865]
-position_smoothing_enabled = true
-
 [node name="hitbox" type="Area2D" parent="." unique_id=2074921393]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox" unique_id=1583613545]
@@ -70,5 +67,8 @@ shape = SubResource("RectangleShape2D_g2els")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=319163094]
 libraries/ = SubResource("AnimationLibrary_dqkch")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=221344865]
+position_smoothing_enabled = true
 
 [connection signal="area_entered" from="hitbox" to="." method="_on_hitbox_area_entered"]
