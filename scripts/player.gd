@@ -7,6 +7,7 @@ extends CharacterBody2D
 @onready var camera: Camera2D = $Camera2D
 @export var jump_velocity: float = -400.0
 
+@onready var jump_audio = $JumpAudio
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -500.0
@@ -32,7 +33,9 @@ func _physics_process(delta: float) -> void:
 			# Trigger the screen shake on jump
 			if camera:
 				camera.apply_shake(15.0)
-
+	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+		velocity.y = JUMP_VELOCITY
+		jump_audio.play() # Play the jump sound
 
 	# Add the gravity.
 	if not is_on_floor():

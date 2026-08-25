@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bjybruywl5s5d" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://00qrcu30c86o" path="res://piskel art/Player (candy).png" id="2_g2els"]
 [ext_resource type="Script" uid="uid://b55n5u2bdlp2p" path="res://scripts/screen_shake.gd" id="3_qhqgy"]
+[ext_resource type="AudioStream" uid="uid://451e1nlb2l63" path="res://sounds/1.Jump noise.mp3" id="4_dqkch"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4vge2"]
 size = Vector2(64, 64)
@@ -73,6 +74,7 @@ libraries/ = SubResource("AnimationLibrary_dqkch")
 position_smoothing_enabled = true
 script = ExtResource("3_qhqgy")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1234042440]
+[node name="JumpAudio" type="AudioStreamPlayer2D" parent="." unique_id=1234042440]
+stream = ExtResource("4_dqkch")
 
 [connection signal="area_entered" from="hitbox" to="." method="_on_hitbox_area_entered"]
