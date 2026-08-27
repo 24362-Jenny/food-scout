@@ -76,7 +76,7 @@ shape = SubResource("RectangleShape2D_r4wdr")
 position = Vector2(3480, 360)
 
 [node name="Portal2" parent="." unique_id=2114321926 instance=ExtResource("4_5rfim")]
-position = Vector2(-208, -304)
+position = Vector2(-320, -473)
 
 [node name="enemy1" parent="." unique_id=1825134664 instance=ExtResource("3_r4wdr")]
 position = Vector2(1920, 560)
