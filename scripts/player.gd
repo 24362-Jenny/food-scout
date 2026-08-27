@@ -62,4 +62,5 @@ func _ready() -> void:
 	HUD_manager.level_time_expired.connect(die)
 
 func die() -> void:
+	AudioManager.play("res://sounds/1.Die sound.mp3")
 	get_tree().change_scene_to_file("res://scenes/death_scene.tscn")
