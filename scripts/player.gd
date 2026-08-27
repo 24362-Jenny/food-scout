@@ -17,62 +17,40 @@ var start_position = Vector2(584,400)
 var jump_count: int = 0
 
 func _physics_process(delta: float) -> void:
-	# Add the gravity.
+	# 1. Add gravity
 	if not is_on_floor():
-		# get_gravity() returns a Vector2, so we multiply by delta and add to velocity
 		velocity += get_gravity() * delta
 	else:
-		# Reset jump count when landing on the ground
+		# Reset jumps when touching the ground
 		jump_count = 0
 
-	# Handle jump & double jump. 
+	# 2. Handle Jump & Double Jump
+	# Note: Use "ui_accept" if you haven't set up a custom "jump" action in Project Settings
 	if Input.is_action_just_pressed("jump"):
 		if is_on_floor() or jump_count < MAX_JUMPS:
 			velocity.y = JUMP_VELOCITY
 			jump_count += 1
-			# Trigger the screen shake on jump
+			
+			# Play audio using the @onready variable
+			jump_audio.play()
+			
+			# Trigger screen shake
 			if camera:
 				camera.apply_shake(15.0)
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
-		jump_audio.play() # Play the jump sound
 
-	# Add the gravity.
-	if not is_on_floor():
-		velocity += get_gravity() * delta
-
-	# Handle jump.
-	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
-
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
+	# 3. Horizontal Movement
 	var direction := Input.get_axis("ui_left", "ui_right")
 	if direction:
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 	
-	# Handle Jump
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = jump_velocity
-		
-		# Trigger the screen shake
-		if camera:
-			camera.apply_shake(15.0) # Pass custom intensity if desired
-	
+	# 4. Apply physics
 	move_and_slide()
-	
-	if velocity == Vector2.ZERO:
-		$AnimationPlayer.play("idle")
-	else:
-		anim_player.play("RESET")
 
-	# handle respawn
+	# 5. Respawn check
 	if position.y > 1000: 
-		#respawn
 		position = start_position
-		
 
 func _on_hitbox_area_entered(_area: Area2D) -> void:
 	# load a new level
