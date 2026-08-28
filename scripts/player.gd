@@ -56,11 +56,20 @@ func _on_hitbox_area_entered(_area: Area2D) -> void:
 	# load a new level
 	print(_area.get_groups())
 	if _area.is_in_group("bullet"):
+		die()
 		get_tree().change_scene_to_file("res://scenes/death_scene.tscn")
 
 func _ready() -> void:
 	HUD_manager.level_time_expired.connect(die)
 
 func die() -> void:
+	# Hide player visual/disable physics so the player "disappears" instantly
+	set_physics_process(false)
+	hide()
+	
+	# Play the global sound
 	AudioManager.play("res://sounds/1.Die sound.mp3")
+	
+	# Wait a fraction of a second for the sound to start/play before changing scene
+	await get_tree().create_timer(0.3).timeout
 	get_tree().change_scene_to_file("res://scenes/death_scene.tscn")
