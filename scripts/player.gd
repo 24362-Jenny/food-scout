@@ -68,7 +68,7 @@ func die() -> void:
 	hide()
 	
 	# Play the global sound
-	AudioManager.play("res://sounds/1.Die sound.mp3")
+	AudioManager.play("res://sounds/New die.mp3")
 	
 	# Wait a fraction of a second for the sound to start/play before changing scene
 	await get_tree().create_timer(0.3).timeout

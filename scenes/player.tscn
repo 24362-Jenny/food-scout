@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://bjybruywl5s5d" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://00qrcu30c86o" path="res://piskel art/Player (candy).png" id="2_g2els"]
 [ext_resource type="Script" uid="uid://b55n5u2bdlp2p" path="res://scripts/screen_shake.gd" id="3_qhqgy"]
-[ext_resource type="AudioStream" uid="uid://451e1nlb2l63" path="res://sounds/1.Jump noise.mp3" id="4_dqkch"]
+[ext_resource type="AudioStream" uid="uid://bd0wie0celdeq" path="res://sounds/New jump.mp3" id="4_dqkch"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4vge2"]
 size = Vector2(64, 64)
